@@ -38,6 +38,10 @@ ul {
   padding-inline-start: 0;
 }
 
+.image-block {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -127,6 +131,9 @@ ul {
   color: var(--content-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -138,14 +145,18 @@ ul {
 /* hero section */
 
 .hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  justify-content: center;
+
   background-color: var(--hero-footer-color);
   color: var(--header-color);
   text-align: center;
 }
 .hero-title {
-  padding-top: 200px;
-  margin-top: 0;
-  margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -155,11 +166,12 @@ ul {
   text-transform: uppercase;
 }
 .hero-btn {
-  padding: 10px 34px;
   text-align: center;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
 
+  width: 216px;
+  height: 50px;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   font-weight: 700;
@@ -180,11 +192,19 @@ ul {
 }
 /* about section */
 
-.about-items {
-  display: flex;
+.about-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-inline-start: 0;
+}
+
+.about-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-list {
+  flex-basis: calc((100% - 30px * 3) / 4);
 }
 
 .about-title {
@@ -200,39 +220,50 @@ ul {
   line-height: 1.71;
   color: var(--content-text-color);
 }
-.about-items .about-list:not(:last-child) {
-  margin-right: 30px;
-}
+/* .about-items .about-list:not(:last-child) {
+  margin-right: 30px; */
 
 /* benefits section */
+
+.benefits-section {
+  padding-bottom: 94px;
+}
 
 .benefits-items {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   padding-inline-start: 0;
-  padding-bottom: 94px;
+}
+
+.benefit-item {
+  display: flex;
+  flex-basis: calc((100% - 30px * 2) / 3);
 }
 .benefit-title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 }
-.benefits-items .benefit-item:not(:last-child) {
-  margin-right: 30px;
-}
+/* .benefits-items .benefit-item:not(:last-child) {
+  margin-right: 30px; */
+
 /* team section */
 .team-section {
   display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--secondary-main-color);
 }
 .team-title {
-  padding-top: 94px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   margin-bottom: 50px;
+  /* display: flex; */
 
   font-weight: 700;
   font-size: 36px;
@@ -240,36 +271,39 @@ ul {
 }
 .team-items {
   display: flex;
-  padding-bottom: 94px;
+  justify-content: space-between;
+  gap: 30px;
 }
-.team-items .team-item:not(:last-child) {
+/* .team-items .team-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 .team-item {
   text-align: center;
+  flex-basis: calc((100% - 30px * 3) / 4);
 }
-.team-item img {
-  display: block;
-}
-.title-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
 
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 .job-title {
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.title-name {
+  text-align: center;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
 
+  letter-spacing: 0.03em;
+}
+.job-text {
+  text-align: center;
+
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
   color: var(--content-text-color);
 }
 .team-item {
@@ -282,6 +316,8 @@ ul {
 /* footer section */
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--hero-footer-color);
 }
 
@@ -291,8 +327,7 @@ ul {
 
 .footer-logo {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   font-family: 'Raleway', sans-serif;
   color: var(--header-color);
@@ -300,13 +335,10 @@ ul {
   font-size: 26px;
   line-height: 1.19;
 }
+
 .footer-logo:hover,
 .footer-logo:focus {
   text-decoration: underline var(--accent-color);
-}
-
-.footer-items {
-  padding-bottom: 60px;
 }
 
 .footer-street {
