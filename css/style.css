@@ -409,7 +409,7 @@ ul {
   gap: 30px;
 }
 .projects-iteam {
-  flex-basis: calc((100% - 30px * 6) / 9);
+  flex-basis: calc((100% - 30px * 2) / 3);
 }
 .projects-iteam {
   background-color: var(--header-color);
