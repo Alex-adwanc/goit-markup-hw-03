@@ -240,6 +240,7 @@ ul {
   display: flex;
   flex-basis: calc((100% - 30px * 2) / 3);
 }
+
 .benefit-title {
   margin-left: auto;
   margin-right: auto;
@@ -253,6 +254,7 @@ ul {
   margin-right: 30px; */
 
 /* team section */
+
 .team-section {
   display: flex;
   padding-top: 94px;
@@ -263,8 +265,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 50px;
-  /* display: flex; */
-
+ 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -431,7 +432,7 @@ ul {
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px; */
-  display: flex;
+  /* display: flex; */
   padding: 20px 24px;
 
   border: 1px solid #eeeeee;
