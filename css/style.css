@@ -284,9 +284,10 @@ ul {
 }
 
 .job-title {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   justify-content: center;
+  
 }
 
 .title-name {
@@ -387,7 +388,7 @@ ul {
 .filters {
   display: flex;
   gap: 8px;
-  padding-bottom: 50px;
+  margin-bottom: 34px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -435,7 +436,9 @@ ul {
   /* display: flex; */
   padding: 20px 24px;
 
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .project-title {
   margin-bottom: 4px;
